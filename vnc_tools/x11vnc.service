@@ -1,0 +1,14 @@
+[Unit]
+Description=Start x11vnc at startup.
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -display :0 -auth guess -modtweak -xkb -add_keysyms -remap DEAD -repeat -loop -rfbauth /etc/x11vnc.pass -localhost -rfbport 5900 -noxrecord -noxfixes -noxdamage -forever -o /var/log/x11vnc.log
+Restart=on-failure
+Restart-sec=10
+
+
+[Install]
+WantedBy=multi-user.target
+
