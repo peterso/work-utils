@@ -1,0 +1,24 @@
+% Define title defaults if not defined by user
+\providecommand{\lettertitle}{Author Response to Reviews of}
+\providecommand{\papertitle}{Title}
+\providecommand{\authors}{Authors}
+\providecommand{\journal}{Journal}
+\providecommand{\doi}{--}
+\providecommand{\Editor}{Name}
+\providecommand{\Letter}{Body}
+
+\input{replies_template/preamble.tex}
+
+\begin{document}
+{\Large\bf \Editor}\\[1em]
+{\large\Letter}\\[1em]
+\newpage
+% Make title
+{\Large\bf \lettertitle}\\[1em]
+{\Large \papertitle}\\[1em]
+{\authors}\\
+%{\it \journal, }\texttt{doi:\doi}\\
+\hrule
+
+% Legend
+\hfill {\bfseries RC:} \textbf{{Reviewer Comment}},\(\quad\) AR: \textcolor{blue}{Author Response}, \(\quad\textcolor{blue}{\square}\) \emph{\textcolor{blue}{Manuscript text}}

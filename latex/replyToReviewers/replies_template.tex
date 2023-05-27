@@ -1,0 +1,226 @@
+\documentclass{article}
+
+%Added this for math
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{epsfig}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert} %this makes it easier to use absolute bars (now /abs{})
+% ---------------------------------
+
+	\def\papertitle{paper title}
+	\def\authors{1st author, 2nd, 3rd, ...}
+	
+	\def\Editor{Dear xxxxxxx\\}
+	
+	\def\Letter{Enclosed please find the replies to the Editor's and Reviewers' comments with a detailed statement of changes made in order to address those comments. xxxxxxx  xxxxxxx  xxxxxx
+	\\ \\
+	Best regards,\\
+	\\
+	Fares J. Abu-Dakka
+}
+
+
+
+
+
+
+\providecommand{\lettertitle}{Author Response to Reviews of}
+\providecommand{\papertitle}{Title}
+\providecommand{\authors}{Authors}
+\providecommand{\journal}{Journal}
+\providecommand{\doi}{--}
+\providecommand{\Editor}{Name}
+\providecommand{\Letter}{Body}
+
+\input{replies_template/preamble.tex}
+
+\def\headall{
+{\Large\bf \lettertitle}\\[1em]
+{\Large \papertitle}\\[1em]
+{\authors}\\
+%{\it \journal, }\texttt{doi:\doi}\\
+\hrule
+
+% Legend
+\hfill {\bfseries RC:} \textbf{{Reviewer Comment}},\(\quad\) AR: \textcolor{blue}{Author Response}, \(\quad\textcolor{blue}{\square}\) \emph{\textcolor{blue}{Manuscript text}}}
+\begin{document}
+{\Large\bf \Editor}\\[1em]
+{\large\Letter}\\[1em]
+\newpage
+% Make title
+\headall
+
+
+
+
+
+
+
+
+
+
+
+\section{Editor}
+
+\RC the comment from AE
+
+\AR reply to the comment
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC the comment from AE
+
+\AR reply to the comment
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC the comment from AE
+
+\AR reply to the comment
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+
+
+\newpage
+% Make title
+\headall
+\section{Reviewer \#1}
+\RC The authors present an electronic based prototype task board for automatically scoring robotic manipulation tasks based on time to completion.  Based on a series of competitions using this task board, the authors make comparisons of manual human-based completion times vs. the competing robot times.  A method of estimating task complexity is applied to the task board design.  The paper is well written, has good organization, and is potentially a good benchmarking contribution to
+the robotics community.
+
+\AR reply xxxxxxx
+%\begin{quote}
+%	the action taken in the paper
+%\end{quote}
+
+\RC Related work and the five benchmarking approaches presented.  Since the pandemic presented travel restrictions some competitions are held remotely, meaning teams can compete from their home base and judges use several camera views including a handheld camera that they can direct placement via video conferencing communications to areas of interest while scoring.	This seems to work well and teams most often prefer this format even post pandemic.
+
+\AR reply xxxxxxx
+%\begin{quote}
+%	the action taken in the paper
+%\end{quote}
+
+\RC The authors state that based on references one, two, and three that “the grading of physical robot performances is tedious and historically been performed manually leading to long reporting cycles and chances for error”.  I don’t agree with your conclusions from these publications.  Reference 1 is focused on reproducibility and repeatability and tries to design a competition to be more suited as s replicable scientific procedure.  The others evaluate how teams have performed and how the competitions can be improved.   I do not argue the benefits of automated scoring, just do not understand how you extracted the need from these publications.
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC The paper does not describe the details of the automatic scoring mechanism for each individual task on the board.  This information should be presented to the reader in a summarized form, perhaps a table. Also, how do you implement the times Is electronic scoring is binary (pass/fail)? The rulesets for the IEEE Robotic Grasping and Manipulation Challenges task boards use an incremental scoring strategy.  As your competition resembles some aspects of the manufacturing track assembly task boards, partial points are given for acquiring a part to be assembled where points are given for grasping the part and successfully reaching the task board.  Points can be achieved even if the part is dropped provided it lands on the task board.  Likewise, partial points are given for partial assemblies where points are received for making an insertion but not necessarily establishing electrical connection by completely pushing a connector into its socket.  These types of partial point systems would be very difficult to automate, but they do provide a more complete measure of a system’s performance.
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC Are any of the parts to be assembled presented to the robot outside of the task board or are they all presented in the unassembled state on the task board.
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC In equation 2, define the variables SPi and SPrel. I did not understand what they were until I studied table VII.
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC Section V compares the performance between humans and robots.  It would be good to provide the data relative to this human study.  How many test subjects, number of tests per subject, and variations per subject based on learning the assembly process.
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC Are all teams required to execute the tasks in a specific order?
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC It would be interesting to see the standard deviation of trial times for each team included in table VI.
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC Reference three does not appear to be correct and uses the title of the paper in reference two.  I believe the correct title for ref 3 should be:” Guest Editorial: Introduction to the Special Issue on Benchmarking Protocols for Robotic Manipulation”
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+
+
+
+
+
+\newpage
+\headall
+\section{Reviewer \#2}
+\RC comment xxxxxxx
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC comment xxxxxxx
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC comment xxxxxxx
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+
+
+
+
+
+\newpage
+\headall
+\section{Reviewer \#3}
+
+\RC comment xxxxxxx
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC comment xxxxxxx
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+\RC comment xxxxxxx
+
+\AR reply xxxxxxx
+\begin{quote}
+	the action taken in the paper
+\end{quote}
+
+
+
+\end{document}
